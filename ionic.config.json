@@ -1,0 +1,7 @@
+{
+  "name": "Kicks",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
