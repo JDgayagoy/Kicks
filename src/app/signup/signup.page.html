@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <div class="signup-section">
+    <img src="assets/icon.png" alt="" style="width: 300px;">
+    <div class="signup-form">
+      <div class="form">
+        <ion-input type="text" placeholder="Username"></ion-input>
+      </div>
+      <div class="form">
+        <ion-input text="email" placeholder="Email Address"></ion-input>
+      </div>
+      <div class="form">
+        <ion-input text="password" placeholder="Password"></ion-input>
+      </div>
+      <ion-button class="ion-button-signup" (click)="GoToLogin()" >Sign up</ion-button>
+    </div>
+    <div class="connect-with">
+      <p>Sign Up with</p>
+      <div class="connect-socials">
+        <button class="ion-button-soc">
+          <img class="soc" src="assets/fb.png" alt="" style="width: 100%; height: 100%;">
+        </button>
+        <button class="ion-button-soc">
+          <img class="soc" src="assets/email.png" alt="" style="width: 100%; height: 100%;">
+        </button>
+        <button class="ion-button-soc">
+          <img class="soc" src="assets/twitter.png" alt="" style="width: 100%; height: 100%;">
+        </button>
+      </div>
+      <div class="signin"><p>Already have an account? <span><button (click)="GoToLogin()">Sign In</button></span></p></div>
+    </div>
+  </div>
+</ion-content>
