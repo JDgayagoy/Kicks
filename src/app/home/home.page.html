@@ -1,0 +1,148 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="flex-container">
+      <h2>KICKS</h2>
+      <img src="assets/search.png" alt="" style="width: 25px;">
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="slider-container">
+    <div class="prevButton" (click)="prevImage()"></div>
+    <div class="nextButton" (click)="nextImage()"></div>
+    <div class="circle-container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="img-container" [ngStyle]="{'background-image': 'url(' + images[currentIndex] + ')'}">
+    </div>
+  </div>
+  <div class="featured-container">
+    <h1>Featured</h1>
+    <swiper-container   
+    [speed]="500"
+    [slidesPerView]="3"
+    [centeredSlides]="true"
+    [spaceBetween]="100"
+    [grabCursor]="true"
+    >
+      <swiper-slide>
+        <div class="images">
+          <img src="assets/blaz.jpg" alt="" width="230px" height="267px">
+          <p>Just-In</p>
+          <h5>Air Max 90</h5>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="images">
+          <img src="assets/second.jpg" alt="" width="230px" height="267px">
+          <p>Just-In</p>
+          <h5>Air Max 90</h5>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="images">
+          <img src="assets/third.jpg" alt="" width="230px" height="267px">
+          <p>Just-In</p>
+          <h5>Air Max 90</h5>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+  <div class="scroll-container">
+    <h1>Shoes</h1>
+    <ul class="categories">
+      <li>Jordan</li>
+      <li>Running</li>
+      <li>Basketball</li>
+      <li>Athletics</li>
+    </ul>
+  </div>
+  <div class="scroll-img-container">
+    <div class="left-section">
+      <div class="card">
+        <div class="card-img-container">
+          <img src="assets/picture.jpg" alt="" class="img-card">
+        </div>
+        <div class="name-color">
+            <h6 class="shoe-name">Nike Air Zoom Pegasus 41 SP</h6>
+            <p>9 colors</p>
+        </div>
+        <p class="price">₱7,895.00</p>
+      </div>
+      <div class="card">
+        <div class="card-img-container">
+          <img src="assets/picture1.png" alt="" class="img-card">
+        </div>
+        <div class="name-color">
+            <h6 class="shoe-name">Nike Dunk Low</h6>
+            <p>9 colors</p>
+        </div>
+        <p class="price">₱4,295.00</p>
+      </div>
+      <div class="card">
+        <div class="card-img-container">
+          <img src="assets/picture2.jpg" alt="" class="img-card">
+        </div>
+        <div class="name-color">
+            <h6 class="shoe-name">Nike Air Max 1 86 OG Black</h6>
+            <p></p>
+        </div>
+        <p class="price">₱6,895.00</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <div class="card">
+        <div class="card-img-container">
+          <img src="assets/picture3.png" alt="" class="img-card">
+        </div>
+        <div class="name-color">
+            <h6 class="shoe-name">Jordan 11 Retro Low White</h6>
+            <p></p>
+        </div>
+        <p class="price">₱ 4,600</p>
+      </div>
+      <div class="card">
+        <div class="card-img-container">
+          <img src="assets/picture4.png" alt="" class="img-card">
+        </div>
+        <div class="name-color">
+            <h6 class="shoe-name">Nike City</h6>
+            <p>9 colors</p>
+        </div>
+        <p class="price">₱ 4,670</p>
+      </div>
+      <div class="card">
+        <div class="card-img-container">
+          <img src="assets/picture5.png" alt="" class="img-card">
+        </div>
+        <div class="name-color">
+            <h6 class="shoe-name">Nike Cortez</h6>
+            <p>5 colors</p>
+        </div>
+        <p class="price">₱ 4,600</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <img src="assets/home.png" alt="" width="25">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <img src="assets/star.png" alt="" width="25">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <img src="assets/basket.png" alt="" width="25">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <div class="profilecontainer">
+          <img src="assets/profile.png" alt="" width="40">
+        </div>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

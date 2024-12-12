@@ -26,4 +26,7 @@ export class LoginPage implements OnInit {
   GoToSignup(){
     this.router.navigateByUrl('/signup')
   }
+  GoToHome(){
+    this.router.navigateByUrl('/landing')
+  }
 }

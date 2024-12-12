@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+* {
+    --background: #F1F1F1;
+    font-family: 'CustomFont', serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+ion-header{
+    width: 100%;
+    height: 70px;
+}
+.flex-container {
+    padding: 0 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.icon-inner{
+    background-color: black;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.flex-container h2 {
+    color: black;
+    font-weight: bolder;
+    margin-right: 20px;
+    font-size: 30px;
+}
+svg{
+    color: black;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.flex-container img{
+    margin-top: 4px;
+} 
+ion-toolbar {
+    height: 100%;
+}
+ion-icon{
+    --background: black;
+    color: black;
+}
+.slider-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 50%;
+}
+.slider-container .circle-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    gap: 1%;
+    z-index: 1;
+}
+.slider-container .img-container{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+.slider-container .prevButton{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+}
+.slider-container .nextButton{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 25%;
+    height: 100%;
+}
+.slider-container .circle-container .circle{
+    width: 8px;
+    height: 8px;
+    background-color: gray;
+    border-radius: 50%;
+
+}
+.featured-container{
+    position: absolute;
+    top: 53%;
+    width: 100%;
+    height: 300px;
+    padding: 1% 5%;
+
+}
+swiper-container{
+    position: relative;
+    width: auto;
+    height: 300px;
+    padding: 1%;
+
+}
+img{
+    object-fit: cover;
+    object-position: center;
+}
+@media screen and (max-width: 415px) {
+    swiper-container{
+        margin-left: -240px;
+    }
+    swiper-slide{
+        margin-left: 50px;
+    }
+
+}
+.featured-container h1{
+    margin-top: 20px;
+    font-weight: 100;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.swiper-container .img-container{
+    margin-top: 1px;
+    width:max-content;
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+.images p{
+    color: #F1F1F1;
+    font-family: sans-serif;
+    font-size: 12px;
+    position: relative;
+    bottom: 25%;
+    left: 7%;
+}
+.images{
+    position: relative;
+    width: 370px;
+    height: 100%;
+
+}
+.images h5{
+    font-weight: bold;
+    color: #F1F1F1;
+    font-family: sans-serif;
+    font-size: 15px;
+    position: relative;
+    bottom: 30%;
+    left: 7%;
+}
+.scroll-container{
+    position: relative;
+    top: 98%;
+}
+.scroll-container h1{
+    margin-left: 5%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.scroll-container ul{
+    padding: 0 5%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.scroll-container ul li{
+    margin-top: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    padding-bottom: 5px;
+    color: black;
+}
+.profilecontainer{
+    border-radius: 100%;
+    overflow: hidden;
+    height: 25px;
+    width: 25px;
+}
+.scroll-img-container{
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    height: auto;
+    top: 98%;
+    display: flex;
+    padding-bottom: 20%;
+}
+.left-section{
+    padding: 2% 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 50px;
+}
+.right-section{
+    padding: 2% 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 50px;
+}
+.card{
+    width: 100%;
+    height: 220px;
+}
+.card-img-container{
+    border: 1px solid grey;
+    width: 100%;
+    height: 80%;
+}
+.img-card{
+    width: 100%;
+    height: 100%;
+}
+.name-color{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -5px;
+}
+.shoe-name{
+    color: black;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.name-color p{
+    color:black;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.price{
+    margin-top: -7px;
+    font-size: 16px;
+    color: green;
+}
+@media screen and (min-width: 1024px){
+    .scroll-container{
+        top: 85%;
+    }
+    .scroll-img-container{
+        top: 90%;
+    }    
+    swiper-container{
+        margin-left: -200px;
+    }
+    swiper-slide{
+        margin-left: -100px;
+    }
+}
