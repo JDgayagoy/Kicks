@@ -1,29 +1,26 @@
 import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonContent, IonHeader, IonTitle, IonToolbar, IonIcon, IonSearchbar, IonList, IonItem } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, IonTitle, IonToolbar } from '@ionic/angular/standalone';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: 'app-product',
+  templateUrl: './product3.page.html',
+  styleUrls: ['./product3.page.scss'],
   standalone: true,
-  schemas:[CUSTOM_ELEMENTS_SCHEMA],  
-  imports: [IonItem, IonList, IonSearchbar, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, IonIcon]
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
 })
-export class HomePage implements OnInit {
+export class Product3Page implements OnInit {
   container = document.getElementById('imgcontainer');
-  images: string[] = ['assets/dunklow.png', '/assets/hisecond.jpg', 'assets/hithird.jpg'];
+  images: string[] = ['assets/blaz.jpg', '/assets/second.jpg'];
   currentIndex = 0
 
   constructor(
     private router:Router
   ) { }
-  ngOnInit() {
-    
-  }
+
   GoToHome(){
     this.router.navigateByUrl('/home')
   }
@@ -36,25 +33,12 @@ export class HomePage implements OnInit {
   GoToProfile(){ 
     this.router.navigateByUrl('profile')
   }
-  GoToP(){
-    this.router.navigateByUrl('/product')
+  ngOnInit() {
   }
-  GoToP1(){
-    this.router.navigateByUrl('/product1')
+  selectSize(size: string) {
+    console.log('Selected size:', size);
+    // Add your logic for size selection, like updating the selected size in state or passing it to checkout
   }
-  GoToP2(){
-    this.router.navigateByUrl('/product2')
-  }
-  GoToP3(){
-    this.router.navigateByUrl('/product3')
-  }
-  GoToP4(){
-    this.router.navigateByUrl('/product4')
-  }
-  GoToP5(){
-    this.router.navigateByUrl('/product5')
-  }
-
   nextImage(){
     if(this.currentIndex <  this.images.length - 1){
       this.currentIndex++;

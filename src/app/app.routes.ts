@@ -47,4 +47,24 @@ export const routes: Routes = [
     path: 'product',
     loadComponent: () => import('./product/product.page').then( m => m.ProductPage)
   },
+  {
+    path: 'product1',
+    loadComponent: () => import('./product1/product1.page').then( m => m.Product1Page)
+  },
+  {
+    path: 'product2',
+    loadComponent: () => import('./product2/product2.page').then( m => m.Product2Page)
+  },
+  {
+    path: 'product3',
+    loadComponent: () => import('./product3/product3.page').then( m => m.Product3Page)
+  },
+  {
+    path: 'product4',
+    loadComponent: () => import('./product4/product4.page').then( m => m.Product4Page)
+  },
+  {
+    path: 'product5',
+    loadComponent: () => import('./product5/product5.page').then( m => m.Product5Page)
+  }
 ];
