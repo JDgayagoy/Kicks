@@ -1,0 +1,95 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="flex-container">
+      <h2>KICKS</h2>
+      <img src="assets/search.png" alt="" style="width: 25px;">
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <h1>Featured</h1>
+    <p>Go-to for style and comfort</p>
+    <swiper-container
+    [speed]="500"
+    [slidesPerView]="3"
+    [centeredSlides]="false"
+    [spaceBetween]="100"
+    [grabCursor]="true">
+      <swiper-slide style="width: 300px;">        
+        <div class="image1">
+            <h3>Nike Dunk Low</h3>
+        </div>
+      </swiper-slide>
+      <swiper-slide style="width: 300px;">
+        <div class="image2">
+
+        </div>
+      </swiper-slide>
+      <swiper-slide style="width: 300px;">
+        <div class="image3">
+          <h3>University Blue</h3>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <p style="font-weight: bold; margin-top: 60px; font-size: 25px;">You may also like</p>
+    <p style="margin-top: 5px;">Keep the swag with different fits</p>
+    <swiper-container class="swiper-container-2"
+    [speed]="500"
+    [slidesPerView]="2"
+    [centeredSlides]="false"
+    [spaceBetween]="100"
+    [grabCursor]="true">
+      <swiper-slide>
+        <div class="image-container">
+          <img src="assets/picture1.png" alt="" width="230px" height="200px">
+          <div class="name-color">
+            <p class="name">Panda Dunks</p>
+            <p class="color">9 Colors</p>
+          </div>
+          <h6>₱ 4,790</h6>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <img src="assets/picture2.jpg" alt="" width="230px" height="200px">
+          <div class="name-color">
+            <p class="name">Panda Dunks</p>
+            <p class="color">9 Colors</p>
+          </div>
+          <h6>₱ 4,829</h6>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="image-container">
+          <img src="assets/picture3.png" alt="" width="230px" height="200px">
+          <div class="name-color">
+            <p class="name">Panda Dunks</p>
+            <p class="color">9 Colors</p>
+          </div>
+          <h6>₱ 4,250</h6>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <img src="assets/home.png" alt="" width="25" style="opacity: 70%;" (click)="GoToHome()">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <img src="assets/star.png" alt="" width="25">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <img src="assets/basket.png" alt="" width="25" style="opacity: 70%;" (click)="GoToCheckout()">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <div class="profilecontainer">
+          <img src="assets/profile.png" alt="" width="40" style="opacity: 70%;" (click)="GoToProfile()">
+        </div>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

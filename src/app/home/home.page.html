@@ -132,15 +132,15 @@
       <ion-tab-button tab="home">
         <img src="assets/home.png" alt="" width="25">
       </ion-tab-button>
-      <ion-tab-button tab="home">
-        <img src="assets/star.png" alt="" width="25">
+      <ion-tab-button tab="featured">
+        <img src="assets/star.png" alt="" width="25" style="opacity: 70%;" (click)="GoToFeatured()">
       </ion-tab-button>
       <ion-tab-button tab="home">
-        <img src="assets/basket.png" alt="" width="25">
+        <img src="assets/basket.png" alt="" width="25" style="opacity: 70%;" (click)="GoToCheckout()">
       </ion-tab-button>
       <ion-tab-button tab="home">
         <div class="profilecontainer">
-          <img src="assets/profile.png" alt="" width="40">
+          <img src="assets/profile.png" alt="" width="40" style="opacity: 70%;" (click)="GoToProfile()">
         </div>
       </ion-tab-button>
     </ion-tab-bar>

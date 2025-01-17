@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+* {
+    --background: #F1F1F1;
+    font-family: 'CustomFont', serif;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+}
+ion-header{
+    width: 100%;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.flex-container {
+    padding: 0 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.icon-inner{
+    background-color: black;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+.flex-container h2 {
+    color: black;
+    font-weight: bolder;
+    margin-right: 20px;
+    font-size: 30px;
+}
+svg{
+    color: black;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.flex-container img{
+    margin-top: 4px;
+} 

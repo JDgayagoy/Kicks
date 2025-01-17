@@ -1,0 +1,43 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <div class="flex-container">
+      <h2>KICKS</h2>
+      <img src="assets/search.png" alt="" style="width: 25px;">
+    </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="top-part">
+      <H2 class="cart">Cart</H2>
+      <p>There are no items in the Cart</p>
+    </div>
+    <div class="bot-part">
+      <h5>Summary</h5>
+      <p>Subtotal <span style="margin-left: 250px;">-</span></p>
+      <p>Delivery & Handling <span>Free</span></p>
+      <h2>Total</h2>
+      <ion-button fill="solid" size="large" color="dark">Checkout</ion-button>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <img src="assets/home.png" alt="" width="25"  style="opacity: 70%;" (click)="GoToHome()">
+      </ion-tab-button>
+      <ion-tab-button tab="featured">
+        <img src="assets/star.png" alt="" width="25" style="opacity: 70%;" (click)="GoToFeatured()">
+      </ion-tab-button>
+      <ion-tab-button tab="checkout ">
+        <img src="assets/basket.png" alt="" width="25">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <div class="profilecontainer">
+          <img src="assets/profile.png" alt="" width="40" style="opacity: 70%;" (click)="GoToProfile()">
+        </div>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

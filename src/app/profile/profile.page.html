@@ -1,0 +1,51 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <div class="user">
+      <img src="/assets/profile.png" alt="" width="125px">
+      <h5>Username</h5>
+      <p>Kicks member since 2025</p>
+    </div>
+    <div class="subtabs-container">
+      <ul>
+        <li style="font-weight: bold;">Profile</li>
+        <li style="font-weight: lighter;" (click)="GoToInbox()">Inbox</li>
+        <li style="font-weight: lighter;" (click)="GoToOrder()">Orders</li>
+      </ul>
+    </div>
+    <div class="user-infos">
+      <p class="label">Email</p>
+      <input type="text">
+      <ion-button color="dark" size="small" style="top: 42%;">Edit</ion-button>
+      <p class="label">Password</p>
+      <p class="infos">*******</p>
+      <ion-button color="dark" size="small" style="top: 50%;">Edit</ion-button>
+      <p class="label">Contact Number</p>
+      <p class="infos">09*********89</p>
+      <p class="label">Data of Birth</p>
+      <input type="text">
+      <ion-button color="dark" size="small" style="top: 66%;">Edit</ion-button>
+      <p class="label">Address</p>
+      <p class="infos">Tuguegarao City, Philippines</p>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <img src="assets/home.png" alt="" width="25" (click)="GoToHome()">
+      </ion-tab-button>
+      <ion-tab-button tab="featured">
+        <img src="assets/star.png" alt="" width="25" style="opacity: 70%;" (click)="GoToFeatured()">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <img src="assets/basket.png" alt="" width="25" style="opacity: 70%;" (click)="GoToCheckout()">
+      </ion-tab-button>
+      <ion-tab-button tab="home">
+        <div class="profilecontainer">
+          <img src="assets/profile.png" alt="" width="40" style="opacity: 70%;">
+        </div>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-footer>

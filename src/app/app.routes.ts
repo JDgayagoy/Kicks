@@ -23,4 +23,28 @@ export const routes: Routes = [
     path: 'landing',
     loadComponent: () => import('./landing/landing.page').then( m => m.LandingPage)
   },
+  {
+    path: 'featured',
+    loadComponent: () => import('./featured/featured.page').then( m => m.FeaturedPage)
+  },
+  {
+    path: 'checkout',
+    loadComponent: () => import('./checkout/checkout.page').then( m => m.CheckoutPage)
+  },
+  {
+    path: 'profile',
+    loadComponent: () => import('./profile/profile.page').then( m => m.ProfilePage)
+  },
+  {
+    path: 'inbox',
+    loadComponent: () => import('./inbox/inbox.page').then( m => m.InboxPage)
+  },
+  {
+    path: 'orders',
+    loadComponent: () => import('./orders/orders.page').then( m => m.OrdersPage)
+  },
+  {
+    path: 'product',
+    loadComponent: () => import('./product/product.page').then( m => m.ProductPage)
+  },
 ];
